@@ -8,7 +8,18 @@
 
 // Start coding here
 
-console.log(generatePattern(3)); 
+function generatePattern(size) {
+  let number = "";
+  for (let i = 1; i <= size; i++) {
+    for (let j = 1; j <= size+1 - i; j++) {
+      number += "* ";
+    }
+    number += "\n";
+  }
+  return number;
+}
+
+console.log(generatePattern(3));
 
 /* 
 
@@ -16,10 +27,9 @@ console.log(generatePattern(3));
 * * 
 *  
 
-*/ 
+*/
 
-
-console.log(generatePattern(5)); 
+console.log(generatePattern(5));
 
 /*
 

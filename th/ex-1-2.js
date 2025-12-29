@@ -8,6 +8,16 @@
 
 // Start coding here
 
+function sumAllValues(matrix) {
+  let newArr = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      newArr += matrix[i][j];
+    }
+  }
+  return newArr;
+}
+
 const matrix = [
   [11, 25, 18],
   [30, 16, 12],
